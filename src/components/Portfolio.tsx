@@ -6,20 +6,20 @@ import { useState, useEffect, useRef } from "react";
 
 const NAME = "Nurbu Lama";
 const TITLE = "Software Engineer & CS Student";
-const TAGLINE = "I build AI-powered tools, teach others to code, and ship things that matter.";
+const TAGLINE = "I build AI-powered tools, attend hackathons, teach coding, and collaborate on software that excites me.";
 
-const ABOUT = `I'm a CS student at Montclair State University (B.S. CS, Minor in Data Science, graduating 2027) focused on full-stack and AI-driven applications. I like projects with a real purpose — an academic planner that actually reads the course catalog, a safety app built on real crime data, not dummy data.
+const ABOUT = `I'm a CS student at Montclair State University (B.S. CS, Minor in Data Science, class of 2027) focused on full-stack and AI-driven applications. I enjoy collaborating on projects that make a difference — currently, I’m contributing to AstroMiner, a Minecraft server startup, by developing an open-source Java plugin and helping bring the team’s ideas to life.
 
-I've also spent time on the teaching side: I ran web development sessions for 100+ students at CodePath, which honestly made me a better engineer. Right now I'm a plugin developer at AstroMiner, a Minecraft server startup in active development, building and shipping Java plugins on a live codebase with a real team.
+I’ve also supported 100+ students at CodePath through web development sessions, which taught me a lot about teaching, teamwork, and learning from others. I’m always excited to contribute to open source and work on software that helps people.
 
-Breakthrough Tech fellow, Presidential Scholarship recipient, Dean's List six times at Montclair State. Actively looking to contribute to open source and work on things that matter.`;
+Breakthrough Tech fellow, Presidential Scholarship recipient, Dean's List six times at Montclair State. Actively looking to contribute to open source!`;
 
 const NAV_ITEMS = ["About", "Experience", "Projects"];
 
 const SOCIAL = [
-  { label: "GitHub", url: "https://github.com/nurbu5" },
+  { label: "GitHub", url: "https://github.com/nurbu" },
   { label: "LinkedIn", url: "https://www.linkedin.com/in/nurbu-lama" },
-  { label: "Email", url: "mailto:lamanurbu@gmail.com" },
+  { label: "Email", url: "mailto:lamanurbu2@gmail.com" },
 ];
 
 const EXPERIENCE = [
@@ -43,22 +43,29 @@ const EXPERIENCE = [
 
 const PROJECTS = [
   {
+    title: "Gravity Minecraft Plugin",
+    url: "https://github.com/nurbu/Beginging",
+    desc: "The same gravity plugin I'm actively building at AstroMiner. Paper API (Java 21), region-aware behavior via WorldEdit and WorldGuard. Currently running on a live server.",
+    tags: ["Java 21", "Paper API", "WorldEdit", "WorldGuard", "Maven"],
+    badge: "In Development",
+  },
+  {
     title: "Course Compass",
-    url: "https://github.com/nurbu5/CourseCompass",
+    url: "https://github.com/nurbu/CourseCompass",
     desc: "AI-powered academic planner with a full RAG pipeline. It ingests official course catalogs, generates personalized degree plans, and checks every recommendation against prerequisite graphs so it doesn't hallucinate requirements. Auth handled by Firebase JWT.",
     tags: ["C#", ".NET", "Firebase", "RAG", "Prisma DB", "LLM"],
     badge: "",
   },
   {
-    title: "SafeCity",
-    url: "https://github.com/nurbu5/safeCity",
+    title: "SafeCity (Kean Hackathon)",
+    url: "https://github.com/nurbu/safeCity",
     desc: "Built at a hackathon. Maps safe walking routes through Newark using real public crime data, Mapbox GL for visualization, and OpenAI to generate route recommendations based on actual crime density — not guesses.",
     tags: ["Next.js", "TypeScript", "Mapbox GL", "OpenAI", "GeoTIFF", "Tailwind"],
     badge: "",
   },
   {
     title: "Air Quality Detection",
-    url: "https://github.com/nehajanar/Air-Quality-Detection",
+    url: "https://github.com/nurbu/AI4ALL_final_project",
     desc: "Air quality forecasting system using a hybrid LSTM + embedding neural network. Trained on 40,000+ real EPA data points to model pollutant and weather trends over time. Ended up at MAE: 8.17, which held up well across different regions.",
     tags: ["Python", "TensorFlow", "LSTM", "Keras", "Scikit-learn"],
     badge: "",
@@ -69,14 +76,7 @@ const PROJECTS = [
     desc: "Full-stack platform where LLMs generate HTML, CSS, and JS from structured user instructions through an NLP pipeline. Added backend validation and sanitization because unchecked LLM output is a mess — this keeps the generated code actually usable.",
     tags: ["React", "Python", "MongoDB", "LLM", "NLP"],
     badge: "",
-  },
-  {
-    title: "Gravity Minecraft Plugin",
-    url: "https://github.com/nurbu5/Beginging",
-    desc: "The same gravity plugin I'm actively building at AstroMiner. Paper API (Java 21), region-aware behavior via WorldEdit and WorldGuard. Currently running on a live server.",
-    tags: ["Java 21", "Paper API", "WorldEdit", "WorldGuard", "Maven"],
-    badge: "In Development",
-  },
+  }
 ];
 
 // ─── Icons ───────────────────────────────────────────────────────────────────
@@ -470,11 +470,7 @@ export default function Portfolio() {
               paddingTop: "32px",
             }}
           >
-            Built with Next.js, deployed on Vercel. Inspired by{" "}
-            <a href="https://brittanychiang.com" target="_blank" rel="noreferrer" style={{ color: "#64ffda", textDecoration: "none" }}>
-              Brittany Chiang
-            </a>
-            .
+            Thank you for Visiting and feel free to reach out!
           </footer>
         </div>
       </div>
