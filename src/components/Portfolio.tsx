@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useState, useEffect, useRef } from "react";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
@@ -123,7 +124,7 @@ function ArrowIcon() {
   );
 }
 
-const socialIcons: Record<string, () => JSX.Element> = {
+const socialIcons: Record<string, () => React.ReactElement> = {
   GitHub: GitHubIcon,
   LinkedIn: LinkedInIcon,
   Email: EmailIcon,
